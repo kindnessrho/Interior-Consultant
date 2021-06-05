@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/img/devchallenges.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="ThisIsDallas-Simple-Grid-8c736aa/simplegrid.css">
+
+
+  <title>Interior Consultant</title>
+</head>
+
+<body>
+  <header>
+
+
+    <a href="#" class="logo">This interior</a>
+    <nav id="nav">
+      <ul>
+        <li><a href="#" class="nav__link active open" id="item__1">Home</a></li>
+        <li><a href="#" class="nav__link">Collection</a></li>
+        <li><a href="#" class="nav__link">About</a></li>
+        <li><a href="#" class="nav__link">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle" onclick="showMenuBar();"><i id="menu-icon" class="fas fa-bars"></i></div>
+
+
+
+
+
+  </header>
+
+
+
+
+
+
+
+
+
+  <div class="container" id="home">
+    <main class="grid grid-pad">
+      <section class="col-5-12" id="sls">
+        <div class="sales-msg" id="first">
+          <h1>Modern Interior</h1>
+          <p>A full-service residential & commercial interior design and staging company offering professional
+            organizing & <br> eco-services</p>
+
+          <div class="cta"><a href="#">Read more <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M13.75 6.75L19.25 12L13.75 17.25"></path>
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M19 12H4.75"></path>
+              </svg>
+            </a></div>
+        </div>
+
+      </section>
+
+
+      <section class="col-7-12">
+        <div class="home-img">
+          <img src="/img/photo1.png" alt="" class="house-pic">
+
+          <div class="card">
+            <div class="card-info">
+
+              <div class="card-title">
+                <div class="card-img"><img src="img/photo2.png" alt="" height="74"></div>
+                <div class="title-txt">
+                  <p class="name">Alizar Webber</p>
+                  <p class="role">Interior Designer</p>
+                </div>
+              </div>
+
+              <div class="description">
+                <h5>Designed in 2020 by Alizar Webber</h5>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </section>
+
+
+
+
+    </main>
+  </div>
+
+  <footer class="footer">
+
+
+    <div class="container foot">
+      <p>created by <a href="https://github.com/kindnessrho" target="_blank">kindnessrho</a> - devChallenges.io
+      </p>
+    </div>
+  </footer>
+
+
+
+  <script>
+    const menuToggle = document.getElementsByClassName('menu-toggle');
+
+    function showMenuBar() {
+
+      const nav = document.getElementById('nav');
+      const menuIcon = document.getElementById('menu-icon');
+
+      nav.classList.toggle('active');
+      menuIcon.classList.toggle('fa-times');
+
+    }
+  </script>
+</body>
+
+</html>

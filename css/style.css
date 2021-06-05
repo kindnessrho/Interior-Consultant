@@ -1,0 +1,773 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;500;700&display=swap');
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root {
+  --primary-font: "Montserrat", sans-serif;
+  --secondary-font: "Lora", Serif;
+  --tertiary-font: "Crimson Pro", Serif;
+
+}
+
+
+
+
+body{
+  font: 18px;
+  font-family: var(--primary-font), var(--secondary-font), var(--tertiary-font);
+  background: #181719;
+ 
+  color: #fff
+  
+  
+}
+
+.container{
+ 
+  width: 99%;
+  margin: auto;
+ 
+
+}
+
+header{
+  width: 95%;
+}
+
+
+
+
+
+
+h1,h2,p{
+  margin: 0;
+}
+
+
+.nav__link{
+  position: relative;
+  color: #fff;
+}
+/*👉.nav__link:hover{
+  position: relative;
+}👈*/
+.nav__link:hover::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 00.1rem;
+  left: 0;
+  top: 1.5rem;
+  background-color: #fff;
+  
+}
+
+
+/*===== active menu =====*/
+
+.open{
+  font-family: var(--primary-font);
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 22px;
+}
+
+.open::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 00.1rem;
+  left: 0;
+  top: 1.5rem;
+  background-color: #fff; 
+  
+}
+
+
+
+
+
+ul{
+  margin: 0;  
+  padding: 0;
+  list-style: none;
+  }
+  a{
+     text-decoration: none;
+  }
+  
+  /*👉a:hover{
+    color: #fff;
+  }👈*/
+
+
+
+
+
+
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  padding: 30px 80px;
+  background-color: #181719;
+  
+}
+
+.logo{
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  padding: 8px;
+  width: 125px;
+  height: 32px;
+  
+}
+
+header > a{
+  
+  text-decoration: none;
+  width: 86px;
+ height: 16px;
+ font-family: var(--tertiary-font);
+font-style: normal;
+font-weight: 200;
+font-size: 14px;
+line-height: 16px;
+color: #fff;
+
+
+text-transform: uppercase;
+}
+
+header nav ul{
+  display: flex;
+  margin: 0;  
+  padding: 0;
+  list-style: none;
+}
+
+
+
+header nav ul li a {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0 30px;
+  color: #fff;
+  
+}
+
+
+
+.menu-toggle{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#home{
+  margin-top: 153px;
+ 
+  
+  
+}
+
+
+
+.home-img{
+  position: absolute;
+}
+
+
+.home-img img{
+  
+
+width: 737px;
+height: 555px;
+left: 626px;
+top: 245px;
+}
+
+
+.card {
+  
+  
+width: 410px;
+height: 189px;
+position: relative;
+bottom: 80px;
+left: 290px;
+
+padding: 14px;
+
+
+background: #181719;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  
+  z-index: 2;
+
+}
+
+.card-img{
+  width: 85px;
+height: 72px;
+
+padding: 8px 18px 14px 17px;
+}
+
+.card-img img {
+  
+  height: 50px;
+  width: 50px;
+  
+  border-radius: 37px;
+ 
+
+}
+
+.card-info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card-title{
+  
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.title-txt .name{
+  
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.title-txt .role{
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 15px;
+color: #828282;
+margin-top: 8px;
+}
+
+.card-info .description{
+  margin-top: 30px;
+  font-family: "Lora", sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 31px;
+width: 287px;
+height: 62px;
+
+}
+
+
+
+
+
+.col-5-12{
+  
+  margin-top: 8%;
+  
+}
+
+
+.sales-msg{
+  
+  width: 70%;
+  margin-left: 77px;
+  
+}
+
+.sales-msg h1{
+  font-family: 'Lora';
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 61px;
+
+}
+
+.sales-msg p{
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 29px;
+margin-top: 40px;
+
+width: 366.4px;
+height: 145px;
+
+}
+
+
+.cta{
+ 
+  margin-top: 48px;
+}
+
+.cta a{
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 22px;
+color: #fff;
+
+}
+
+svg{
+ 
+  position: absolute;
+left: 15%;
+right: 9.2%;
+
+
+}
+
+footer p {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #A9A9A9;
+  margin: 352px auto 24px auto;
+  
+}
+
+footer a {
+  color: #A9A9A9;
+  font-weight: bold;
+}
+
+
+@media  (max-width: 1024px){
+  
+  main{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   
+  }
+
+ 
+
+  .sales-msg{
+   
+    width: 500px;
+   
+    
+    
+  }
+
+
+  .sales-msg p{
+    
+   width: 500px;
+    
+  }
+
+  header{
+    padding: 20px;
+    
+ }
+
+
+
+header nav{
+    position: absolute;
+    top: 72px;
+    left: -100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: calc(100vh - 70px);
+    background: #181719;
+    transition: 250ms left ease-in-out;
+    z-index: 99;
+    
+}
+
+header nav.active{
+    left: 0;
+}
+
+header nav ul{
+    display: block;
+    text-align: center;
+}
+
+header nav ul li{
+    display: block;
+    padding: 30px 0;
+}
+
+.menu-toggle{
+    display: block;
+    font-size: 1.6rem;
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+
+
+
+  #first{
+    margin-left: 1px;
+    margin-bottom: 25px;
+  }
+
+  .sales-msg{
+   
+    width: 865px;
+   
+  
+  }
+
+  .sales-msg h1{
+    font-size: 100px;
+  }
+
+  .sales-msg p{
+    font-size: 28px;
+    width: 600px;
+  }
+
+  .cta a{
+    font-size: 34px;
+  }
+
+  svg{
+    left: 18%;
+right: 9.2%;
+top: 44.2%;
+width: 70px;
+height: 70px;
+  }
+
+
+  .home-img{
+    
+    width: 935px;
+    height: 300.32px;
+
+  }
+
+  .home-img img{
+    width: 935px;
+height: 464.32px;
+  }
+
+
+
+  .card-img img {
+    width: 56.59px;
+height: 56.59px;
+  
+  }
+
+  .title-txt{
+    margin-top: 8px;
+  }
+  
+
+  .card {
+   
+left: 490px;
+  }
+  
+
+
+
+
+
+  footer{
+    
+    margin-top: 500px;
+  }
+}
+
+
+@media (max-width: 768px){
+
+
+  svg{
+    left: 23%;
+right: 9.2%;
+top: 58.5%;
+width: 40px;
+height: 40px;
+  }
+
+  .home-img{
+    
+    width: 735px;
+    height: 300.32px;
+
+  }
+
+  .home-img img{
+    width: 735px;
+height: 464.32px;
+  }
+
+  .card-img img {
+    width: 56.59px;
+height: 56.59px;
+  
+  }
+
+  .card {
+  
+ left: 290px;
+   }
+   
+
+}
+
+
+@media (max-width: 640px) {
+
+  
+
+
+
+  .col-5-12{
+    
+    margin: 0 auto;
+    
+  }
+
+
+  #home{
+    margin-top: 3px;
+   
+    
+    
+  }
+
+  #first{
+    margin-left: 1px;
+    margin-bottom: 25px;
+  }
+
+  .sales-msg{
+    
+    width: 365px;
+  
+    
+    
+  }
+
+  .sales-msg h1{
+    
+    
+    font-family: Lora;
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 46px;
+
+  }
+
+
+  .sales-msg p{
+    font-size: 14px;
+    line-height: 17px;
+   
+   width: 300px;
+    height: 85px;
+    margin-top: 25px;
+  }
+
+  .cta{
+    
+    margin-top: 5px;
+  }
+  
+  .cta a{
+    font-size: 14px;
+line-height: 17px;
+  
+  }
+
+  
+
+  svg{
+    display: none;
+  }
+
+  .col-7-12{
+    
+    
+    height: 50vh;
+    
+    
+    
+  }
+
+  .home-img{
+    
+    width: 350px;
+    height: 300.32px;
+    
+
+  }
+
+  .home-img img{
+    width: 365px;
+height: 264.32px;
+  }
+
+  .card{
+    width: 300px;
+height: 138px;
+
+left: 55px;
+  }
+
+  .card-img{
+    width: 62.2px;
+height: 52.68px;
+
+  
+  padding: 8px 10px 14px 10px;
+  }
+
+  .card-img img {
+    width: 36.59px;
+height: 36.59px;
+  
+  }
+
+  .title-txt{
+    margin-top: 7px;
+  }
+  
+  .card-info .description{
+    font-size: 18px;
+line-height: 23px;
+  }
+
+  
+
+  .foot p{
+    
+    margin: 61px auto 24px auto;
+    
+
+  }
+
+  main{
+    
+    height: 80vh;
+  }
+
+  
+
+
+  
+}
+
+
+@media (max-width: 375px){
+  
+
+  svg{
+    display: none;
+  }
+
+  .home-img img{
+    width: 330px;
+height: 264.32px;
+  }
+
+  .card-img img {
+    width: 36.59px;
+height: 36.59px;
+  }
+
+  .card{
+    width: 290px;
+height: 138px;
+
+left: 30px;
+  }
+
+  .footer{
+    
+    margin: 61px auto 0px auto;
+    
+
+  }
+}
+
+@media (max-width: 360px){
+  .home-img img{
+    width: 315px;
+height: 264.32px;
+  }
+
+  svg{
+    display: none;
+  }
+  .home-img{
+    
+    width: 300px;
+    height: 300.32px;
+    
+
+  }
+
+  .card-img img {
+    width: 36.59px;
+height: 36.59px;
+  }
+}
+
+
+
+
+ 
+  
